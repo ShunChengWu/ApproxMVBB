@@ -62,7 +62,7 @@ macro(defineTarget TARGETNAME)
     target_link_libraries(${TARGETNAME} PUBLIC ApproxMVBB::CoreForTests gtest gmock_main)
     add_dependencies(build_and_test ${TARGETNAME})
 
-#    setTargetCompileOptions(${TARGETNAME})
+    setTargetCompileOptions(${TARGETNAME})
 
     if( CMAKE_CXX_COMPILER_ID STREQUAL "GNU" OR 
         CMAKE_CXX_COMPILER_ID MATCHES "Clang")
