@@ -183,7 +183,7 @@ else()
 endif()
 
 # Define all MVBB Source files
-include(SetTargetCompileOptions)
+#include(SetTargetCompileOptions)
 include(DefineApproxMVBBSources)
 set(ApproxMVBB_INCLUDE_DIR "${PROJECT_SOURCE_DIR}/include/ApproxMVBB")
 set(ApproxMVBB_EXTERNAL_INCLUDE_DIRS "${PROJECT_SOURCE_DIR}/external/Diameter/include/ApproxMVBB"
