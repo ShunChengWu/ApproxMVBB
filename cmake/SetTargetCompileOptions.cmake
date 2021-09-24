@@ -34,8 +34,8 @@ macro(setTargetCompileOptions TARGETNAME)
         message(FATAL_ERROR "Could not set compile flags for compiler id: ${CMAKE_CXX_COMPILER_ID}")
     endif()
 
-    set_target_properties(${TARGETNAME} PROPERTIES CXX_STANDARD 14)
-    target_compile_features(${TARGETNAME} PUBLIC cxx_std_14)
+    set_target_properties(${TARGETNAME} PROPERTIES CXX_STANDARD 17)
+    target_compile_features(${TARGETNAME} PUBLIC cxx_std_17)
     
     target_compile_options(${TARGETNAME} PRIVATE ${CXX_FLAGS} ${CXX_WARNINGS} )
     target_compile_options(${TARGETNAME} PRIVATE $<$<CONFIG:Debug>:${CXX_FLAGS_DEBUG}> )
